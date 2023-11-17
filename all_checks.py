@@ -11,5 +11,12 @@ def main():
 	if check_reboot():
 		print("Pending reboot.")
 		sys.exit(1)
+	if disk_full():
+		print("Disk Full")
+		sys.exit(1)
+	print("Everything ok")
+	sys.exit(0)
+		
+		
 
 main()
